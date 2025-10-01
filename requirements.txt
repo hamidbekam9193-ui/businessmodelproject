@@ -6,3 +6,4 @@ pydantic
 python-dotenv
 google-generativeai
 crewai
+crewai_tools
