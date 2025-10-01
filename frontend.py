@@ -1245,7 +1245,7 @@ if st.button("Generate Business Plan"):
             #st.write(data)
 
             response = requests.post(
-                "http://localhost:8000/generate_business_plan",
+                "https://business-plan-backend-rggz.onrender.com/generate_business_plan",
                 json=data
             )
 
@@ -1268,4 +1268,3 @@ if st.button("Generate Business Plan"):
                 st.error(f"Error: {response.text}")
         except Exception as e:
             st.error(f"Error connecting to the server: {str(e)}")
-                
