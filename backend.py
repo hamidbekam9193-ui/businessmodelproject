@@ -6,7 +6,7 @@ import traceback
 import google.generativeai as genai
 from dotenv import load_dotenv
 
-from business_plan_flow.src.business_plan_flow.main import BusinessPlanFlow, BusinessPlanState
+from main import BusinessPlanFlow, BusinessPlanState
 
 app = FastAPI()
 
@@ -219,3 +219,4 @@ async def generate_business_plan(request: BusinessPlanRequest):
     except Exception as e:
         print(traceback.format_exc())
         raise HTTPException(status_code=500, detail=str(e))
+
